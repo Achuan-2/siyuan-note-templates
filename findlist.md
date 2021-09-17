@@ -1,0 +1,1 @@
+{{SELECT * FROM blocks WHERE (id in (select parent_id from blocks where path LIKE '%/.action{.id}.sy' and type !='l' ) and type='i')  order by created DESC}}

@@ -1,0 +1,1 @@
+.action{now | date "15:04:05"}
