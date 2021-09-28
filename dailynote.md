@@ -44,14 +44,12 @@ weather：: ☁️⛈🌀🌞☀️🌤🌥☔🌧⛈🌦🌪🌫🛰🌬️🌈
   *
 * #Question#
 
-  *
+  * [ ] 
 * #Improvement#
 
-  *
+  * [ ] 
 * #News#
 
   *
 
 ## ❤ List at least three happy things that happened today?
-
-## 🎯 What habits do I need to develop tomorrow?
