@@ -1,11 +1,11 @@
-> 🦥
+> 🦥 重要的事情不会忘记，忘记的事情不重要
 
-location： 湖北省武汉市
-weather：: ☁️⛈🌀🌞☀️🌤🌥☔🌧⛈🌦🌪🌫🛰🌬️🌈☂️☔⚡❄️☄️🔥💧🌊
-
+Location： 湖北省武汉市
+Weather：: ☁️⛈🌀🌞☀️🌤🌥☔🌧⛈🌦🌪🌫🛰🌬️🌈☂️☔⚡❄️☄️🔥💧🌊
+Score : 分
 ## ⏰what I must do today
 
-* [ ] To-do
+* [ ] 
 
 ## 💪Mini Habits
 
@@ -18,7 +18,7 @@ weather：: ☁️⛈🌀🌞☀️🌤🌥☔🌧⛈🌦🌪🌫🛰🌬️🌈
   * [ ] [周打卡](siyuan://blocks/20210830231007-w7cvvku)
   * [ ] 记录自己每天干了什么，到一个[汇总的页面](siyuan://blocks/20210827225050-pefbzwh)
   * [ ] 睡前给今天打分
-  * [ ] 早睡早起，24：00 睡，7：30 起
+  * [ ] 早睡早起，23：50 睡，7：20 起
 * 技能（分数：）
 
   * [ ] js 学习
@@ -32,6 +32,7 @@ weather：: ☁️⛈🌀🌞☀️🌤🌥☔🌧⛈🌦🌪🌫🛰🌬️🌈
 * #Agenda#
 
   * Wake Up Time：
+  * 
   * Bedtime：
 * #Notes#
 
@@ -47,9 +48,17 @@ weather：: ☁️⛈🌀🌞☀️🌤🌥☔🌧⛈🌦🌪🌫🛰🌬️🌈
   * [ ] 
 * #Improvement#
 
-  * [ ] 
+  * 今天做的好的地方
+    * 
+  * 不好的地方
+    * 
 * #News#
 
   *
 
 ## ❤ List at least three happy things that happened today?
+
+
+## 📋 Todo for Tomorrow？
+
+* [ ] 
