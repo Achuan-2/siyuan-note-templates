@@ -1,4 +1,4 @@
-## .action{now | date "2006.01"}日记
+## ✍.action{now | date "2006.01"}日记
 {: style="color: var(--b3-card-success-color); background-color: var(--b3-card-success-background);"}
 
 
@@ -6,7 +6,7 @@
 {: style="color: var(--b3-card-info-color); background-color: var(--b3-card-info-background);"}
 
 ## 🦉这个月发生了什么事情？
-{: style="background-color: var(--b3-font-background5); color: var(--b3-font-color5);"}
+{: style="background-color: var(--b3-card-warning-background); color: var(--b3-card-warning-color);"}
 
 - 
 
