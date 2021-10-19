@@ -1,10 +1,20 @@
 > 🦥 重要的事情不会忘记，忘记的事情不重要
+{: style="color: var(--b3-card-success-color); background-color: var(--b3-card-success-background);"}
+
+> # **今日回顾**{: style="font-weight:400 !important;"}
+>
+> Location： 湖北省武汉市
+> Weather：: 🌧
+> Score : 分
+> 
 {: style="color: var(--b3-card-info-color); background-color: var(--b3-card-info-background);"}
+# 💪Mini Habits
+
 Location： 湖北省武汉市
 Weather：: ☁️⛈🌞☀️🌤🌥🌧⛈🌦🌪🌈🌀⚡❄️🔥🌊🌫
 Score : 分
 
-# 💪Mini Habits
+#  💪Mini Habits
 
 * 微习惯（分数：）
 
