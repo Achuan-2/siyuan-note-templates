@@ -1,0 +1,1 @@
+.action{$before := (div (now.Sub (toDate "2006-01-02" "2020-02-19")).Hours 24)}
