@@ -12,16 +12,14 @@
 ### 😛重要事情
 - 
 
-### 😶我的心态变化
+### 🥳My Achievement
 - 
 
 ### 🤡没有干好的事情
 - 
 
-### 🥳My Achievement
-- 
+
 
 ## .action{.title} 月引用块汇总
 
-
-{{SELECT * FROM blocks WHERE path like '%/.action{.id}/%.sy' AND type= 'b' ORDER BY updated DESC }}
+{{SELECT * FROM blocks WHERE path like '%/.action{.id}/%.sy' AND type= 'b' ORDER BY HPath }}

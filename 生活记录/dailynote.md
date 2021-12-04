@@ -35,8 +35,13 @@
 
 }}}
 
+> Date：.action{ now | date "2006.01.02 Mon"}
 > Location： 湖北省武汉市
 > Weather：🌞🌤🌥☁️⛈🌧🌦🌈🌪🌀⚡❄️🔥🥶🌊🌫
+> 🛌睡眠
+> * Wake Up Time: 
+> * Bedtime：
+> 
 > 💡 
 {: id="20211127231659-p9sxpo1" style="color: var(--b3-card-success-color); background-color: var(--b3-card-success-background);"}
 
@@ -44,7 +49,15 @@
 
 
 ## 💠Matter
+
+💪 进展
+*  
+
+🖊 笔记
 * 
+
+## ❓Question
+* [ ] 
 
 ## 📮Encounter
 * 
