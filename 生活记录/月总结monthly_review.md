@@ -22,4 +22,4 @@
 
 ## .action{.title} 月引用块汇总
 
-{{SELECT * FROM blocks WHERE path like '%/.action{.id}/%.sy' AND type= 'b' ORDER BY HPath }}
+{{SELECT * FROM blocks WHERE path like '%/20211101201741-xwgznus/%.sy' AND type= 'b' AND ial like '%background-color%' ORDER BY HPath }}
