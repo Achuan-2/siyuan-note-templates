@@ -23,3 +23,7 @@
 ## .action{.title} 月引用块汇总
 
 {{SELECT * FROM blocks WHERE path like '%/.action{.id}/%.sy' AND type= 'b' AND ial like '%background-color%' ORDER BY HPath }}
+
+
+```
+/{{now | date "2006.01"}}/{{now | date "2006-01-02"}} {{last (slice (list "星期日" "星期一" "星期二" "星期三" "星期四" "星期五" "星期六" ) 0 (add (mod (div (now.Sub (toDate "2006-01-02" "2021-05-02")).Hours 24) 7 ) 1))}}
