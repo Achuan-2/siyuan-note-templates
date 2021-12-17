@@ -58,3 +58,6 @@
 * 
 ## 🧠Need To Change
 * 
+## 🎲Random
+
+{{SELECT * FROM blocks where type = 'd' ORDER BY random() LIMIT 1}}
