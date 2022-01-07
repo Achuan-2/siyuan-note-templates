@@ -27,7 +27,7 @@
 * [ ] 💰记账
 * [ ] [周打卡](siyuan://blocks/20210830231007-w7cvvku)
 * [ ] 给今天打分
-* [ ] 早睡早起，23：50 睡，7：20 起
+* [ ] 早睡早起，24：00 睡，7：30 起
 
 
 }}}
@@ -37,27 +37,28 @@
 
 > Date：.action{ now | date "2006.01.02 Mon"}
 > Location： 湖北省武汉市
-> Weather：🌞🌤🌥☁️⛈🌧🌦🌈🌪🌀⚡❄️🔥🥶🌊🌫
+> Weather：🌞🌤🌥☁️⛈🌧🌦🌈🌪🌀⚡❄️🔥🥶🌊🌫 
+> Score：？ 分
 > 🛌睡眠
 > * Wake Up Time: 
 > * Bedtime：
 > 
 > 💪 进展
 > 
-> 💡 
+> ❤ Happy things
+> 💡 Thoughts
+> 
+> 🧠 Need to change
+> 
 {: style="color: var(--b3-card-success-color); background-color: var(--b3-card-success-background);"}
-
 
 ## 🖊 Notes
 * 
 
-## ❓Question
-* [ ] 
-
 ## 📮Encounter
 * 
-## 🧠Need To Change
-* 
+
+
 ## 🎲Random
 
 {{SELECT * FROM blocks where type = 'd' ORDER BY random() LIMIT 1}}
