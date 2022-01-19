@@ -36,29 +36,23 @@
 }}}
 
 > Date：.action{ now | date "2006.01.02 Mon"}
-> Location： 湖北省武汉市
+> Location： 福建省宁德市霞浦县
 > Weather：🌞🌤🌥☁️⛈🌧🌦🌈🌪🌀⚡❄️🔥🥶🌊🌫 
 > Score：？ 分
 > 
-> 🛌睡眠
+> 🛌 睡眠
 > * Wake Up Time: 
 > * Bedtime：
 > 
 > 💪 进展
 > 
-> ❤ Happy things
-> 
-> 💡 Thoughts
-> 
+> 🖊 Notes
+>
+> 📮 Encounter
+>
 > 🧠 Need to change
 > 
 {: style="color: var(--b3-card-success-color); background-color: var(--b3-card-success-background);"}
-
-## 🖊 Notes
-* 
-
-## 📮Encounter
-* 
 
 
 ## 🎲Random
