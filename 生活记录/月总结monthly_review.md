@@ -5,6 +5,10 @@
 ## 🐱‍👤月计划
 {: style="color: var(--b3-card-info-color); background-color: var(--b3-card-info-background);"}
 
+## 📺 月总结视频
+{: style="color: var(--b3-card-error-color); background-color: var(--b3-card-error-background);"}
+
+
 ## 🦉这个月发生了什么事情？
 {: style="background-color: var(--b3-card-warning-background); color: var(--b3-card-warning-color);"}
 
@@ -22,4 +26,4 @@
 
 ## .action{.title} 月引用块汇总
 
-{{SELECT * FROM blocks WHERE path like '%/.action{.id}/%.sy' AND type= 'b' AND ial like '%background-color%' ORDER BY HPath }}
+{{SELECT * FROM blocks WHERE path like '%/.action{.id}/______________-_______.sy' AND type= 'b' AND ial like '%background-color%' ORDER BY HPath }}
