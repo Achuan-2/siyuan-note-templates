@@ -2,10 +2,10 @@
 {: style="color: var(--b3-card-success-color); background-color: var(--b3-card-success-background);"}
 
 
-## 🐱‍👤月计划
+## ⏲️月计划
 {: style="color: var(--b3-card-info-color); background-color: var(--b3-card-info-background);"}
 
-## 📺 月总结视频
+## 📺月总结视频
 {: style="color: var(--b3-card-error-color); background-color: var(--b3-card-error-background);"}
 
 
