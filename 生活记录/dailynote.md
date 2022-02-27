@@ -23,6 +23,7 @@
 ## 🐣Mini-Habits
 * [ ] [记录睡眠时间](siyuan://blocks/20210827100508-3mkmbeu)
 * [ ] [随机复习](siyuan://blocks/20210722172300-eiqyduh)
+* [ ] 记账
 * [ ] 回顾昨天
 * [ ] [周打卡](siyuan://blocks/20210830231007-w7cvvku)
 * [ ] 给今天打分
@@ -37,7 +38,7 @@
 > {{{col
 > {{{row
 > Location： 湖北省武汉市
-> Weather：🌞🌤🌥☁️⛈🌧🌦🌈🌪🌀⚡❄️🔥🥶🌊🌫
+> Weather：🌞🌥☁️⛈🌧🌦🌈🌪🌀⚡❄️🔥🥶🌊🌫
 > Score：分
 > 一句话概括：
 > }}}
@@ -51,16 +52,20 @@
 > }}}
 > 
 > ---
-> 💪 进展
-> <iframe src="http://127.0.0.1:6806/widgets/Clock-Pac" data-src="http://127.0.0.1:6806/widgets/Clock-Pac" data-subtype="widget" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+> #📅今天要改进的地方#
+> 
+> * [ ] Todo
+> 
+> #🚀️进展#
+> <iframe src="http://127.0.0.1:6806/widgets/Clock-Pac" data-src="http://127.0.0.1:6806/widgets/Clock-Pac" data-subtype="widget" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 705px; height: 159px;"></iframe>
 > - 
-> 🧠 今日反省
+> #🧠今日反省#
 > 
-> 🖊 笔记
+> #✍笔记#
 >
-> 💌 遇见
+> #💌遇见#
 > 
-> 📸今日碎片
+> #📸今日碎片#
 > 
 {: style="color: var(--b3-card-success-color); background-color: var(--b3-card-success-background);"}
 
