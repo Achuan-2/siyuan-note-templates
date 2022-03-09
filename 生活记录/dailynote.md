@@ -22,12 +22,13 @@
 {{{row
 ## 🐣Mini-Habits
 * [ ] [记录睡眠时间](siyuan://blocks/20210827100508-3mkmbeu)
-* [ ] [随机复习](siyuan://blocks/20210722172300-eiqyduh)
-* [ ] 记账
-* [ ] 回顾昨天
 * [ ] [周打卡](siyuan://blocks/20210830231007-w7cvvku)
-* [ ] 给今天打分
-* [ ] 早睡早起，24：00 睡，7：30 起
+* [ ] [2022愿望清单](siyuan://blocks/20220107150030-vrjys3w)
+* [ ] 每天拍一张照
+* [ ] 每天录下自己的声音
+* [ ] 每日记账
+* [ ] 回顾昨天
+* [ ] 每天早睡早起，24：00 睡，7：30 起
 * [ ] 微软日历记事
 }}}
 }}}
@@ -56,16 +57,16 @@
 > 
 > * [ ] Todo
 > 
-> #🚀️进展#
+> #daily/🚀️进展#
 > <iframe src="http://127.0.0.1:6806/widgets/Clock-Pac" data-src="http://127.0.0.1:6806/widgets/Clock-Pac" data-subtype="widget" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 705px; height: 159px;"></iframe>
 > - 
-> #🧠今日反省#
+> #daily/🧠今日反省#
 > 
-> #✍笔记#
+> #daily/✍笔记#
 >
-> #💌遇见#
+> #daily/💌遇见#
 > 
-> #📸今日碎片#
+> #daily/📸今日碎片#
 > 
 {: style="color: var(--b3-card-success-color); background-color: var(--b3-card-success-background);"}
 
