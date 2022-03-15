@@ -1,4 +1,6 @@
 
+[昨天?](siyuan://blocks/)|[明天?](siyuan://blocks/)
+{: style="text-align: center;"}
 
 {{{col
 {{{row
@@ -66,7 +68,6 @@
 >
 > #daily/💌遇见#
 > 
-> #daily/📸今日碎片#
 > 
 {: style="color: var(--b3-card-success-color); background-color: var(--b3-card-success-background);"}
 
