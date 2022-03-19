@@ -16,18 +16,18 @@
 * [ ] 每天录下自己的声音
 * [ ] 每日记账
 * [ ] 回顾昨天
-* [ ] 每天早睡早起，24：00 睡，7：30 起
+* [ ] 每天7：30 起
 * [ ] 微软日历记事
 }}}
 }}}
 
-> Date：.action{ now | date "2006.01.02 Mon"} | Score：分
+> .action{ now | date "2006.01.02 Mon"} ? 分
 > {: style="text-align: center;"}
->
-> Location： 湖北省武汉市 | Weather：🌞🌥☁️⛈🌧🌦🌈🌪🌀⚡❄️🔥🥶🌊🌫
-> 🛌Sleep：Bedtime ？ | Wake Up Time ？
-> 
+> Weather：🌞🌥☁️⛈🌧🌦🌈🌪🌀⚡❄️🔥🥶🌊🌫
 > 📝一句话概括：
+> 🏠Location： 湖北省武汉市
+> 🛌Sleep：Bedtime: ？ | Wake Up Time: ？
+> 
 > 
 > ---
 > #📅今天要改进的地方#
