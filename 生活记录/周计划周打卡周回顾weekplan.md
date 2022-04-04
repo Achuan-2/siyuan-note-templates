@@ -8,7 +8,7 @@
 .action{$rightHour :=nospace (cat "+" $rightday "h")}
 
 
-## .action{(now | date_modify $leftHour) | date "2006-01-02"} ~ .action{(now | date_modify $rightHour) | date "2006-01-02"} 📅周打卡
+### .action{(now | date_modify $leftHour) | date "2006.01.02"} ~ .action{(now | date_modify $rightHour) | date "2006.01.02"} 📅周打卡
 
 这周的心愿，期待有什么改变：
 
@@ -30,5 +30,8 @@
 
 周回顾
 * 进展
-* 收获
+  * 毕设
+  * 尤克里里
+  * 个人进步
 * 不足
+* 遇见
