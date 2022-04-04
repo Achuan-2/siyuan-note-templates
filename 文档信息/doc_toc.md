@@ -17,7 +17,7 @@
 
 .action{$blocks:= (queryBlocks "SELECT * FROM blocks WHERE root_id='?' AND type= 'h'  limit -1" $rootid)}
 
-.action{range $index,$v:=$blocks}
+.actirangeon{ $index,$v:=$blocks}
 .action{$Htype:=$v.SubType | replace "h" ""}
 
 .action{$intType := int $Htype}
