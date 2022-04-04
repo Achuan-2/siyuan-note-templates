@@ -11,5 +11,5 @@
 
 
 .action{range $v := $blocks}
-- [.action{$v.HPath}](siyuan://block/.action{$v.ID})  
+- [.action{$v.HPath}](siyuan://blocks/.action{$v.ID})  
 .action{end}
