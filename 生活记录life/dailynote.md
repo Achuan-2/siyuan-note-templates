@@ -73,8 +73,10 @@
 > * [ ] Todo
 > 
 > #daily/🚀️进展#
-> - 毕设
-> - 尤克里里
+> - 毕设：
+> - 尤克里里：
+> - 科目四：
+> - 锻炼：
 > - 个人成长
 > 
 > #daily/🧠今日反省#
@@ -86,7 +88,7 @@
 > 
 {: style="color: var(--b3-card-success-color); background-color: var(--b3-card-success-background);"}
 
-## 每日反思
+## 每日反思❌✅
 1. 节制。食不过饱，饮酒不醉。
 2. 沉默寡言。言必于人于己有益，避免无益的聊天。
 3. 生活秩序。每一样东西应有其安放的地方，做每件日常事务当有一定的时间。
@@ -100,6 +102,6 @@
 11. 镇静。勿因小事或普通的不可避免的事故而惊慌失措。
 12. 谦虚。仿效耶稣和苏格拉底。
 
-## 🎲Random
+## 🎲随机复习
 
 {{SELECT * FROM blocks where type = 'd' ORDER BY random() LIMIT 1}}

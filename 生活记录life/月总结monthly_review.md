@@ -14,7 +14,9 @@
 ## 📽️月总结
 {: style="color: var(--b3-card-error-color); background-color: var(--b3-card-error-background);"}
 
-
+.action{now | date "2006.01"}月周总结 #TODO#
+.action{now | date "2006.01"}月笔记汇总 #TODO#
+【Monthly Letter】.action{now | date "2016.01"}月来信 #TODO#
 ## 🦉这个月发生了什么事情？
 {: style="background-color: var(--b3-card-warning-background); color: var(--b3-card-warning-color);"}
 
