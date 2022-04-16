@@ -33,7 +33,11 @@
 .action{$all_week = add $all_week 1}
 .action{end}
 
+.action{/* 2.2、倒数日*/}
+.action{$hurry_date := "2022-04-30"}
+.action{$hurry_countdown := add (div ((toDate "2006-01-02" $hurry_date).Sub now).Hours 24) 1}
 > 今年已过了 .action{$pass} 天（第 .action{$week} 周/共 .action{$all_week} 周）,距离 .action{$next_year} 年还有 .action{$countdown} 天。
+> 距离 .action{$hurry_date} 四月结束还有 .action{$hurry_countdown} 天。
 
 
 {{{col
@@ -64,20 +68,19 @@
 > Weather：🌞🌥☁️⛈🌧🌦🌈🌪🌀⚡❄️🔥🥶🌊🌫
 > 
 > 🏠Location： 湖北省武汉市
-> 🛌Sleep：Bedtime- ？ | Wake Up Time- ？
+> 🛌Sleep：[Bedtime] ？ | [Wake Up Time] ？
 > 
 > 
 > ---
 > #📅今天要改进的地方#
 > 
-> * [ ] Todo
+> * [ ] 坚持使用番茄钟
 > 
 > #daily/🚀️进展#
 > - 毕设：
 > - 尤克里里：
-> - 科目四：
-> - 锻炼：
-> - 个人成长
+> - 健康与锻炼：
+> - 个人：
 > 
 > #daily/🧠今日反省#
 > 

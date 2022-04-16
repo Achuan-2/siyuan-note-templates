@@ -1,4 +1,4 @@
-## .action{ now | date "2006.01.02"} 
+## .action{ now | date "2006.01.02 Mon"} 
 
 - 今日目标
 - 今日工作内容
