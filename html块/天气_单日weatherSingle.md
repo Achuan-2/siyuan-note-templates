@@ -1,0 +1,2 @@
+<!-- 天气模板，适合放在个人首页或dailynote中 -->
+<iframe width="225" scrolling="no" height="50" frameborder="0" allowtransparency="true" src="http://i.tianqi.com/index.php?c=code&amp;id=7&amp;icon=1&amp;num=3" data-src="http://i.tianqi.com/index.php?c=code&amp;id=7&amp;icon=1&amp;num=3" style="width: 859px; height: 102px;"></iframe>

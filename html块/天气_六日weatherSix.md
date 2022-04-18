@@ -1,0 +1,1 @@
+<iframe width="800" height="150" frameborder="0" scrolling="no" hspace="0" src="https://i.tianqi.com/?c=code&amp;a=getcode&amp;id=48&amp;num=6&amp;icon=1" data-src="https://i.tianqi.com/?c=code&amp;a=getcode&amp;id=48&amp;num=6&amp;icon=1" style="width: 751px; height: 135px;"></iframe>
