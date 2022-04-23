@@ -34,4 +34,4 @@
 
 ## .action{.title} 月日记汇总
 
-{{SELECT * FROM blocks WHERE path like '%/.action{.id}/______________-_______.sy' AND type= 'b' AND ial like '%background-color%' ORDER BY HPath }}
+{{SELECT * FROM blocks WHERE path like '%/.action{.id}/______________-_______.sy' AND subtype= 'h1' ORDER BY HPath }}
