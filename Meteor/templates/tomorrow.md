@@ -1,0 +1,1 @@
+.action{(now | date_modify "24h") | date "2006-01-02"}

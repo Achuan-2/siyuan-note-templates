@@ -12,43 +12,13 @@
 这周一定要完成的任务
 * 愿望1
 * 愿望2
-{{{col
-{{{row
-周一
-{: style="color: var(--b3-card-error-color); background-color: var(--b3-card-error-background);"}
-1. 空
-}}}
-{{{row
-周二
-{: style="color: var(--b3-card-warning-color); background-color: var(--b3-card-warning-background);"}
-1. 空
-}}}
-{{{row
-周三
-{: style="color: var(--b3-card-info-color); background-color: var(--b3-card-info-background);"}
-1. 空
-}}}
-{{{row
-周四
-{: style="background-color: var(--b3-font-background5);"}
-1. 空
-}}}
-{{{row
-周五
-{: style="background-color: var(--b3-font-background7);"}
-1. 空
-}}}
-{{{row
-周六
-{: style="background-color: var(--b3-font-background11);"}
-1. 空
-}}}
-{{{row
-周七
-{: style="background-color: var(--b3-font-background10);"}
-1. 空
-}}}
-}}}
+
+| **事项** ❌✅⚫ | **一** | **二** | **三** | **四** | **五** | **六** | **七** |
+| :---------------------: | -------------- | -------------- | -------------- | -------------- | -------------- | -------------- | -------------- |
+|                      |              |              |              |              |              |              |              |
+|                      |              |              |              |              |              |              |              |
+|                      |              |              |              |              |              |              |              |
+
 这周的进步
 * 
 这周的问题
