@@ -9,7 +9,7 @@
 .action{$leftHour :=nospace (cat "-" $leftday "h") }
 .action{$rightHour :=nospace (cat "+" $rightday "h")}
 
- ## .action{(now | date_modify $leftHour) | date "2006.01.02"} ~ .action{(now | date_modify $rightHour) | date "2006.01.02"}
+.action{(now | date_modify $leftHour) | date "2006-01-02"} ~ .action{(now | date_modify $rightHour) | date "2006-01-02"}
 
 
  
