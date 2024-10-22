@@ -15,34 +15,6 @@ dailynote 归档：<span data-type="a" data-href="siyuan://blocks/20240111110403
   {: id="20240913235759-cuwh5d1"}
 {: id="20240913235758-wmu5f93"}
 
-## <span data-type="text">🚀 </span>{: style="background-color: var(--b3-card-warning-background); color: var(--b3-font-color2);"}<span data-type="text block-ref" data-subtype="s" data-id="20240111110403-d7pl49p">Project</span>{: style="background-color: var(--b3-card-warning-background); color: var(--b3-font-color2);"}
-{: id="20240507174827-ggl33t4"}
-
-* {: id="20240522173042-zhdbl5z"}
-  {: id="20240522173042-5za43s0"}
-{: id="20240522173041-gumqpfx"}
-
-## <span data-type="text">🔧 Areas</span>{: style="background-color: var(--b3-font-background3); color: var(--b3-font-color3);"}
-{: id="20240507174827-jux1qpt" memo="碎碎念与如何变得更好"}
-
-{: id="20240913235715-mro5g0y"}
-
-## <span data-type="text">🍔Resource</span>{: style="background-color: var(--b3-font-background6); color: var(--b3-font-color6);"}
-{: id="20240914121549-yhks3fa"}
-
-{: id="20240914121645-euj3h81"}
-
-## <span data-type="text">🍉 Life</span>{: style="background-color: var(--b3-font-background4); color: var(--b3-font-color4);"}
-{: id="20240911001239-68vdveu"}
-
-* {: id="20240913235717-h4xbr02"}
-  {: id="20240913235717-yfhvggr"}
-{: id="20240913235716-w4oqmwv"}
-
-## <span data-type="text">🤔 Reflection</span>{: style="background-color: var(--b3-font-background8); color: var(--b3-font-color8);"}
-{: id="20240913235729-wvxihi2"}
-
-.action{ $weekday := now | date "Mon" }
 
 .action{$docIconDict := dict "Mon" "day_Today_1_Monday.png" "Tue" "day_Today_2_Tuesday.png" "Wed" "day_Today_3_Wednesday.png" "Thu" "day_Today_4_Thursday.png" "Fri" "day_Today_5_Friday.png" "Sat" "day_Today_6_Saturday.png" "Sun" "day_Today_7_Sunday.png"} 
 .action{$docIconUrl := get $docIconDict $weekday}
