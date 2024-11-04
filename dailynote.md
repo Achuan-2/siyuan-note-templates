@@ -13,16 +13,18 @@
 
 ## <span data-type="text">📂Notes</span>{: style="background-color: var(--b3-card-success-background); color: var(--b3-card-success-color)"}
 
-* Research
-* Project
-* Area
-* Resources
-* Life 
+* 📂**Research**
+* 📂**Project**
+* 📂**Area**
+* 📂**Resources**
+* 📂**Life**
 
 
 ## <span data-type="text">🤔 Reflection</span>{: style="background-color: var(--b3-font-background8); color: var(--b3-font-color8);"}
 
+❤️我的进步
 
+💔我的不足
 
 
 
