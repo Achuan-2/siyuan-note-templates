@@ -26,12 +26,11 @@
 
 💔我的不足
 
+🤔我的反思
 
 
-.action{ $weekday := now | date "Mon" }
-
-.action{$docIconDict := dict "Mon" "day_Today_1_Monday.png" "Tue" "day_Today_2_Tuesday.png" "Wed" "day_Today_3_Wednesday.png" "Thu" "day_Today_4_Thursday.png" "Fri" "day_Today_5_Friday.png" "Sat" "day_Today_6_Saturday.png" "Sun" "day_Today_7_Sunday.png"} 
-.action{$docIconUrl := get $docIconDict $weekday}
+.action{/* 获取今天日期和星期 */}
+.action{$today := now | date "2006-01-02" }
 
 
-{: icon="time/.action{$docIconUrl}"   type="doc"}
+{: icon="api/icon/getDynamicIcon?type=6&date=.action{$today}"   type="doc"}
