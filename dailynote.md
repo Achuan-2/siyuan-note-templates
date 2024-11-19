@@ -13,7 +13,7 @@
 
 ## <span data-type="text">📂Notes</span>{: style="background-color: var(--b3-card-success-background); color: var(--b3-card-success-color)"}
 
-* 📂**Research**
+* 📂**Research Progress**
 * 📂**Project**
 * 📂**Area**
 * 📂**Resources**
