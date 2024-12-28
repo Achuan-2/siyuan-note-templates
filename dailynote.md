@@ -25,12 +25,7 @@
 ## <span data-type="text">今天我做了什么，打了哪些怪</span>{: style="background-color: var(--b3-card-success-background); color: var(--b3-card-success-color);"}
 {: id="20241220115944-uvprije"}
 
-> <span data-type="strong">你要的不是整理笔记，而是要整理任务</span>
-> {: id="20241220115944-7yucid7"}
->
-> <span data-type="strong">一个任务，一个笔记</span>。《防弹笔记法》强调笔记不能只是把所见所闻直接塞进笔记本里，而是需要以任务为单位整理。资料不要根据资料逻辑整理（比如时间），而是要根据一个任务的执行逻辑整理，一个页面统整任务所需的步骤、资料与想法。按照时间来管理日记、笔记，看似井井有条，可是所有的信息都零散在不同的笔记里。
-> {: id="20241220115944-gkeeesb"}
-{: id="20241220115944-mclsstb"}
+
 
 * {: id="20241220115944-tilonsx"}📂<span data-type="strong">Research Progress</span>
   {: id="20241220115944-iouw8ca" style="background-color: var(--b3-card-error-background); color: var(--b3-card-error-color); --b3-parent-background: var(--b3-card-error-background);"}
