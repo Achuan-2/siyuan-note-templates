@@ -22,7 +22,7 @@
   {: id="20241220115944-70xxuc9"}
 {: id="20241220115944-dcjhwvv"}
 
-## <span data-type="text">📂N</span>{: style="background-color: var(--b3-card-success-background); color: var(--b3-card-success-color);"}<span data-type="custom-footnote-hidden-selected-text-20241220115131-o1p6ley text">ote</span>{: style="background-color: var(--b3-card-success-background); color: var(--b3-card-success-color);"}<span data-type="text">s: 打怪任务笔记</span>{: style="background-color: var(--b3-card-success-background); color: var(--b3-card-success-color);"}
+## <span data-type="text">今天我做了什么，打了哪些怪</span>{: style="background-color: var(--b3-card-success-background); color: var(--b3-card-success-color);"}
 {: id="20241220115944-uvprije"}
 
 > <span data-type="strong">你要的不是整理笔记，而是要整理任务</span>
