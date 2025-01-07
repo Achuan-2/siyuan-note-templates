@@ -1,5 +1,5 @@
-快捷入口：<span data-type="a" data-href="siyuan://blocks/20241009113128-gbxgj3m">实验记录本</span> 丨 <span data-type="a" data-href="siyuan://blocks/20230330111337-bfoss5l">人生改善计划！</span> 丨<span data-type="a" data-href="siyuan://blocks/20230304225859-8xlywce">生活记录</span>
-{: id="20241231162908-ks3fqji" style="text-align: center;"}
+快捷入口：<span data-type="a" data-href="siyuan://blocks/20250107105529-4y2stfm">2025周计划周复盘</span>丨<span data-type="a" data-href="siyuan://blocks/20241009113128-gbxgj3m">实验记录本</span> 丨 <span data-type="a" data-href="siyuan://blocks/20230330111337-bfoss5l">人生改善计划！</span> 丨<span data-type="a" data-href="siyuan://blocks/20230304225859-8xlywce">生活记录</span>
+{: id="20250107095926-bdkh89u" style="text-align: center;"}
 
 ## <span data-type="text">🌱微习惯</span>{: style="background-color: var(--b3-card-success-background); color: var(--b3-card-success-color);"}
 {: id="20241231162908-evl7kod"}
@@ -45,31 +45,25 @@
 ## <span data-type="text">⚡️今天我做了什么，打了哪些怪</span>{: style="background-color: var(--b3-font-background12); color: var(--b3-font-color12);"}
 {: id="20241231162908-rvzhm49"}
 
-* {: id="20241231162908-ummom5s"}📂<span data-type="strong">Research Progress</span>
+* {: id="20241231162908-ummom5s"}<span data-type="strong">💼科研工作进展</span>
   {: style="background-color: var(--b3-card-error-background); color: var(--b3-card-error-color); --b3-parent-background: var(--b3-card-error-background);" id="20241231162908-nwgo6yj"}
 
   * {: id="20241231162908-eoa32yo"}
     {: id="20241231162908-oygsnx5"}
   {: id="20241231162908-h0b82lp"}
-* {: id="20241231162908-zh308oa"}📂<span data-type="strong">Project</span>
-  {: id="20241231162908-qil2fiv" style="background-color: var(--b3-card-warning-background); color: var(--b3-card-warning-color); --b3-parent-background: var(--b3-card-warning-background);"}
-
-  * {: id="20241231162908-y1eodym"}
-    {: id="20241231162908-j5fja2r"}
-  {: id="20241231162908-gbkhinz"}
-* {: id="20241231162908-89x46yu"}📂<span data-type="strong">Area</span>
+* {: id="20241231162908-89x46yu"}<span data-type="strong">📚专业知识精进</span>
   {: id="20241231162908-16rhxv2" style="background-color: var(--b3-card-info-background); color: var(--b3-card-info-color); --b3-parent-background: var(--b3-card-info-background);"}
 
   * {: id="20241231162908-szx0op6"}
     {: id="20241231162908-47inrxa"}
   {: id="20241231162908-kay7cg1"}
-* {: id="20241231162908-aymhlih"}📂<span data-type="strong">Resources</span>
+* {: id="20241231162908-aymhlih"}<span data-type="strong">🔋兴趣学习充电</span>
   {: style="background-color: var(--b3-card-success-background); color: var(--b3-card-success-color); --b3-parent-background: var(--b3-card-success-background);" id="20241231162908-gp2opd6"}
 
   * {: id="20241231162908-f92ty07"}
     {: id="20241231162908-8v2xy4i"}
   {: id="20241231162908-a5xmqa2"}
-* {: id="20241231162908-g7jfwac"}📂<span data-type="strong">Life</span>
+* {: id="20241231162908-g7jfwac"}<span data-type="strong">🌱个人生活记录</span>
   {: id="20241231162908-qnxhztc" style="background-color: var(--b3-font-background6); color: var(--b3-font-color6); --b3-parent-background: var(--b3-font-background6);"}
 
   * {: id="20241231162908-8p2vw77"}
