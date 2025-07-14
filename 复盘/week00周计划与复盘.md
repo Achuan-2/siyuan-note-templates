@@ -1,5 +1,6 @@
 .action{/*<!-- 计算本周每一天的日期 -->*/}
-.action{$monday := now.AddDate 0 0 (int (sub 1 (int (now | Weekday))))}
+.action{$weekday := ternary 7 (int (now | Weekday)) (eq (int (now | Weekday)) 0)}
+.action{$monday := now.AddDate 0 0 (int (sub 1 $weekday))}
 .action{$tuesday := $monday.AddDate 0 0 1}
 .action{$wednesday := $monday.AddDate 0 0 2}
 .action{$thursday := $monday.AddDate 0 0 3}
@@ -47,217 +48,217 @@
 ### 每日计划
 {: id="20250707193143-rgoi54i"}
 
-- {: id="20250707192646-tcmp7pf"}.action{$monday | date "20060102 Mon"}
-  {: id="20250707192646-9bn70m6"}
+- {: id="20250708114714-d3cxkd2" style="background-color: var(--b3-font-background3); --b3-parent-background: var(--b3-font-background3);"}### .action{$monday| date "20060102 Mon"}
+  {: id="20250708114714-6aja5w6"}
 
-  - {: id="20250707192655-r7numlz"}计划
-    {: id="20250707192655-j4tl3kf"}
+  - {: id="20250708114914-ijynu3y" style="background-color: var(--b3-font-background2); --b3-parent-background: var(--b3-font-background2);"}计划
+    {: id="20250708114914-fox0syv"}
 
-    - {: id="20250707192700-2yx5561"}[ ] 
-      {: id="20250707192700-mwp44ih"}
-    - {: id="20250707192701-hpwcrwv"}[ ] 
-      {: id="20250707192701-r29z7sp"}
-    - {: id="20250707192702-qcqm0i8"}[ ] 
-      {: id="20250707192702-ncd80sk"}
-    {: id="20250707192700-23jr98z"}
-  - {: id="20250707192657-h01j0ig"}实际完成情况
-    {: id="20250707192657-yec7vc3"}
+    - {: id="20250708114914-gywerru"}[ ] 
+      {: id="20250708114914-8yt5ijf"}
+    - {: id="20250708114914-8x3551z"}[ ] 
+      {: id="20250708114914-l6c588m"}
+    - {: id="20250708114914-gqulghy"}[ ] 
+      {: id="20250708114914-zhdzmcz"}
+    {: id="20250708114914-6u1byqd"}
+  - {: id="20250708114914-l9ofw7l" style="background-color: var(--b3-font-background1); --b3-parent-background: var(--b3-font-background1);"}实际完成情况
+    {: id="20250708114914-qox7s2l"}
 
-    - {: id="20250707192705-rdlg1we"}
-      {: id="20250707192705-hc25lwq"}
-    - {: id="20250707192705-wxjlo63"}
-      {: id="20250707192705-f8p82x1"}
-    - {: id="20250707192705-tw9blj7"}
-      {: id="20250707192705-75pszo2"}
-    {: id="20250707192705-v4cfnkr"}
-  - {: id="20250707192845-xp7roiw"}明天如何改进
-    {: id="20250707192845-de4t9te"}
+    - {: id="20250708114914-oaatcuq"}
+      {: id="20250708114914-2r2a2yu"}
+    - {: id="20250708114914-2t946iy"}
+      {: id="20250708114914-06m8cz4"}
+    - {: id="20250708114914-noekc1p"}
+      {: id="20250708114914-nhcx1x5"}
+    {: id="20250708114914-jmq23zv"}
+  - {: id="20250708114914-08vf28r" style="background-color: var(--b3-font-background4); --b3-parent-background: var(--b3-font-background4);"}明天如何改进
+    {: id="20250708114914-pc0ay89"}
 
-    - {: id="20250707192848-al7fq2z"}
-      {: id="20250707192848-osa1n2s"}
-    {: id="20250707192849-38eu6uj"}
-  {: id="20250707192655-t3vyrpx"}
-- {: id="20250707192651-m1h6uan"}.action{$tuesday | date "20060102 Tue"}
-  {: id="20250707192651-n3gv18v"}
+    - {: id="20250708114914-zo9k2ae"}
+      {: id="20250708114914-uohj91d"}
+    {: id="20250708114914-2xmshew"}
+  {: id="20250708114914-zqjcgvr"}
+- {: id="20250708114714-s95hei6" style="background-color: var(--b3-font-background3); --b3-parent-background: var(--b3-font-background3);"}### .action{$tuesday| date "20060102 Tue"}
+  {: id="20250708114714-n8bi1ki"}
 
-  - {: id="20250707192902-kj821ky"}计划
-    {: id="20250707192902-piwyhve"}
+  - {: id="20250708114714-py8wy65" style="background-color: var(--b3-font-background2); --b3-parent-background: var(--b3-font-background2);"}计划
+    {: id="20250708114714-0qwm7kq"}
 
-    - {: id="20250707192902-eh3oeqw"}[ ] 
-      {: id="20250707192902-wsnegxb"}
-    - {: id="20250707192902-2xubhgp"}[ ] 
-      {: id="20250707192902-l5ot11x"}
-    - {: id="20250707192902-houdjj2"}[ ] 
-      {: id="20250707192902-i4tdz9h"}
-    {: id="20250707192902-ryz5zex"}
-  - {: id="20250707192902-1wkbtz7"}实际完成情况
-    {: id="20250707192902-t81hwrj"}
+    - {: id="20250708114714-7rthu7j"}[ ] 
+      {: id="20250708114714-1cws4yb"}
+    - {: id="20250708114714-vjc2b1q"}[ ] 
+      {: id="20250708114714-v7kujqt"}
+    - {: id="20250708114714-1gl474j"}[ ] 
+      {: id="20250708114714-sp750va"}
+    {: id="20250708114714-vewvbti"}
+  - {: id="20250708114714-qh9un52" style="background-color: var(--b3-font-background1); --b3-parent-background: var(--b3-font-background1);"}实际完成情况
+    {: id="20250708114714-26c64le"}
 
-    - {: id="20250707192902-5qmlhzs"}
-      {: id="20250707192902-b9xmfp5"}
-    - {: id="20250707192902-91kuvnx"}
-      {: id="20250707192902-yc0ebcu"}
-    - {: id="20250707192902-y98yxzo"}
-      {: id="20250707192902-luqgbcg"}
-    {: id="20250707192902-ve3d9bg"}
-  - {: id="20250707192902-dake00x"}明天如何改进
-    {: id="20250707192902-mddb6xa"}
+    - {: id="20250708114714-illslzg"}
+      {: id="20250708114714-i3k6l0b"}
+    - {: id="20250708114714-ew13x8m"}
+      {: id="20250708114714-vh4ctgm"}
+    - {: id="20250708114714-vekoygz"}
+      {: id="20250708114714-5644ued"}
+    {: id="20250708114714-h1oczop"}
+  - {: style="background-color: var(--b3-font-background4); --b3-parent-background: var(--b3-font-background4);" id="20250708114714-zwwc4zg"}明天如何改进
+    {: id="20250708114714-xqnoghu"}
 
-    - {: id="20250707192902-rk1d478"}
-      {: id="20250707192902-fru3bvi"}
-    {: id="20250707192902-4jz14m4"}
-  {: id="20250707192902-qa6j5oo"}
-- {: id="20250707192654-56anwxf"}.action{$wednesday | date "20060102 Wed"}
-  {: id="20250707192654-4e8oo7l"}
+    - {: id="20250708114714-vxme7j0"}
+      {: id="20250708114714-8robp47"}
+    {: id="20250708114714-gbf4zhc"}
+  {: id="20250708114714-phsg2h9"}
+- {: id="20250708114714-chkwkn8" style="background-color: var(--b3-font-background3); --b3-parent-background: var(--b3-font-background3);"}### .action{$wednesday| date "20060102 Wed"}
+  {: id="20250708114714-238zr76"}
 
-  - {: id="20250707192906-x846h51"}计划
-    {: id="20250707192906-nudkjuc"}
+  - {: style="background-color: var(--b3-font-background2); --b3-parent-background: var(--b3-font-background2);" id="20250708114714-xzl9b1k"}计划
+    {: id="20250708114714-pzy0dn9"}
 
-    - {: id="20250707192906-62hw2ax"}[ ] 
-      {: id="20250707192906-tpxst53"}
-    - {: id="20250707192906-tdbt22h"}[ ] 
-      {: id="20250707192906-oqf3iop"}
-    - {: id="20250707192906-tzqbel6"}[ ] 
-      {: id="20250707192906-3yb04xl"}
-    {: id="20250707192906-eryfpry"}
-  - {: id="20250707192906-1g2o6x8"}实际完成情况
-    {: id="20250707192906-y3m71ua"}
+    - {: id="20250708114714-2shqurn"}[ ] 
+      {: id="20250708114714-rofmilb"}
+    - {: id="20250708114714-aaxfn4f"}[ ] 
+      {: id="20250708114714-rtnnyaq"}
+    - {: id="20250708114714-xr62zrz"}[ ] 
+      {: id="20250708114714-o5kaoox"}
+    {: id="20250708114714-jmv26nw"}
+  - {: id="20250708114714-mn9rzw4" style="background-color: var(--b3-font-background1); --b3-parent-background: var(--b3-font-background1);"}实际完成情况
+    {: id="20250708114714-c93t4y3"}
 
-    - {: id="20250707192906-c1zwwyy"}
-      {: id="20250707192906-kjktdgr"}
-    - {: id="20250707192906-d1y6e7y"}
-      {: id="20250707192906-wm71msl"}
-    - {: id="20250707192906-bvzbyhc"}
-      {: id="20250707192906-86296f8"}
-    {: id="20250707192906-zgqwe3j"}
-  - {: id="20250707192906-grx2m7p"}明天如何改进
-    {: id="20250707192906-yb2pu2t"}
+    - {: id="20250708114714-zcjh2p6"}
+      {: id="20250708114714-76h8aa2"}
+    - {: id="20250708114714-gzapzfn"}
+      {: id="20250708114714-g65j9cq"}
+    - {: id="20250708114714-bsxvg4l"}
+      {: id="20250708114714-il2kd29"}
+    {: id="20250708114714-n71an7b"}
+  - {: style="background-color: var(--b3-font-background4); --b3-parent-background: var(--b3-font-background4);" id="20250708114714-8cn41cf"}明天如何改进
+    {: id="20250708114714-wvjmim2"}
 
-    - {: id="20250707192906-ad9bge7"}
-      {: id="20250707192906-3unenza"}
-    {: id="20250707192906-9onm54c"}
-  {: id="20250707192906-xji9fna"}
-- {: id="20250707192941-vgrhd33"}.action{$thursday | date "20060102 Thu"}
-  {: id="20250707193048-zefeddc"}
+    - {: id="20250708114714-mxpj3do"}
+      {: id="20250708114714-rnk8vqb"}
+    {: id="20250708114714-53eyhvk"}
+  {: id="20250708114714-gk0pakb"}
+- {: id="20250708114714-ybfsy9d" style="background-color: var(--b3-font-background3); --b3-parent-background: var(--b3-font-background3);"}### .action{$thursday| date "20060102 Thu"}
+  {: id="20250708114714-5ibjpdw"}
 
-  - {: id="20250707193048-7qoiw63"}计划
-    {: id="20250707193048-ohv0xlg"}
+  - {: id="20250708114714-g7et9uf" style="background-color: var(--b3-font-background2); --b3-parent-background: var(--b3-font-background2);"}计划
+    {: id="20250708114714-kqrqia0"}
 
-    - {: id="20250707193048-rgb3lh9"}[ ] 
-      {: id="20250707193048-1r4mioe"}
-    - {: id="20250707193048-scjg0ia"}[ ] 
-      {: id="20250707193048-9o723d1"}
-    - {: id="20250707193048-uvaarxw"}[ ] 
-      {: id="20250707193048-mm2npbd"}
-    {: id="20250707193048-puj4pwi"}
-  - {: id="20250707193048-r5m6x5r"}实际完成情况
-    {: id="20250707193048-29997cg"}
+    - {: id="20250708114714-xd6gsvi"}[ ] 
+      {: id="20250708114714-pegm8n1"}
+    - {: id="20250708114714-7fj1wjg"}[ ] 
+      {: id="20250708114714-nkxgq47"}
+    - {: id="20250708114714-xc5ebsi"}[ ] 
+      {: id="20250708114714-rlrgqoq"}
+    {: id="20250708114714-o4i9ci3"}
+  - {: id="20250708114714-s5bbld7" style="background-color: var(--b3-font-background1); --b3-parent-background: var(--b3-font-background1);"}实际完成情况
+    {: id="20250708114714-d9enbw3"}
 
-    - {: id="20250707193048-yefmr75"}
-      {: id="20250707193048-ndf9rmy"}
-    - {: id="20250707193048-k1xbhci"}
-      {: id="20250707193048-9las0p5"}
-    - {: id="20250707193048-gktdkz6"}
-      {: id="20250707193048-a7vrxtj"}
-    {: id="20250707193048-uuwhw52"}
-  - {: id="20250707193048-k3mb2v0"}明天如何改进
-    {: id="20250707193048-jmoighy"}
+    - {: id="20250708114714-fv2ic2p"}
+      {: id="20250708114714-evkzs0i"}
+    - {: id="20250708114714-8s56i2h"}
+      {: id="20250708114714-abclv3i"}
+    - {: id="20250708114714-otfrrmr"}
+      {: id="20250708114714-68ivhve"}
+    {: id="20250708114714-c5v1fwp"}
+  - {: id="20250708114714-16j67hx" style="background-color: var(--b3-font-background4); --b3-parent-background: var(--b3-font-background4);"}明天如何改进
+    {: id="20250708114714-07adx54"}
 
-    - {: id="20250707193048-5cdlxdm"}
-      {: id="20250707193048-cmmhk5p"}
-    {: id="20250707193051-t7439td"}
-  {: id="20250707193048-h3vowub"}
-- {: id="20250707193052-30mvs91"}.action{$friday | date "20060102 Fri"}
-  {: id="20250707193053-bwsubsc"}
+    - {: id="20250708114714-418oph2"}
+      {: id="20250708114714-21f4dww"}
+    {: id="20250708114714-dbdvmc3"}
+  {: id="20250708114714-wh7igwc"}
+- {: id="20250708114714-ac1dje8" style="background-color: var(--b3-font-background3); --b3-parent-background: var(--b3-font-background3);"}### .action{$friday| date "20060102 Fri"}
+  {: id="20250708114714-ldqyvpv"}
 
-  - {: id="20250707193053-pfyvgzt"}计划
-    {: id="20250707193053-p9ccmat"}
+  - {: id="20250708114714-42uiguv" style="background-color: var(--b3-font-background2); --b3-parent-background: var(--b3-font-background2);"}计划
+    {: id="20250708114714-8txgm1q"}
 
-    - {: id="20250707193053-4e23szm"}[ ] 
-      {: id="20250707193053-xavp5v9"}
-    - {: id="20250707193053-re151ec"}[ ] 
-      {: id="20250707193053-8u0ru0b"}
-    - {: id="20250707193053-sz3j47v"}[ ] 
-      {: id="20250707193053-bgx2fql"}
-    {: id="20250707193053-8550zsu"}
-  - {: id="20250707193053-s3by1h9"}实际完成情况
-    {: id="20250707193053-dxb5sfe"}
+    - {: id="20250708114714-08kihyc"}[ ] 
+      {: id="20250708114714-iebkyrk"}
+    - {: id="20250708114714-sah52bf"}[ ] 
+      {: id="20250708114714-7i4avz0"}
+    - {: id="20250708114714-6s695qr"}[ ] 
+      {: id="20250708114714-l3iri9t"}
+    {: id="20250708114714-cw8j1tv"}
+  - {: id="20250708114714-ppp46gs" style="background-color: var(--b3-font-background1); --b3-parent-background: var(--b3-font-background1);"}实际完成情况
+    {: id="20250708114714-03djvax"}
 
-    - {: id="20250707193053-jaxe6ju"}
-      {: id="20250707193053-d5sbw2g"}
-    - {: id="20250707193053-56bdzm5"}
-      {: id="20250707193053-c24xipj"}
-    - {: id="20250707193053-vhza4gm"}
-      {: id="20250707193053-k3tread"}
-    {: id="20250707193053-fyvfe1c"}
-  - {: id="20250707193053-zvujwf7"}明天如何改进
-    {: id="20250707193053-0hj61ws"}
+    - {: id="20250708114714-v4rg64v"}
+      {: id="20250708114714-j69xawo"}
+    - {: id="20250708114714-3yshfwy"}
+      {: id="20250708114714-z4rpv9q"}
+    - {: id="20250708114714-o8kq1dy"}
+      {: id="20250708114714-n9n883p"}
+    {: id="20250708114714-7ktiyad"}
+  - {: id="20250708114714-6fxxoss" style="background-color: var(--b3-font-background4); --b3-parent-background: var(--b3-font-background4);"}明天如何改进
+    {: id="20250708114714-qwrrubz"}
 
-    - {: id="20250707193053-c9z6v8q"}
-      {: id="20250707193053-x8q9ttk"}
-    {: id="20250707193053-9dys8qx"}
-  {: id="20250707193053-ff92g2o"}
-- {: id="20250707193055-cjnj1bu"}.action{$saturday | date "20060102 Sat"}
-  {: id="20250707193056-qd6isir"}
+    - {: id="20250708114714-jjimdxj"}
+      {: id="20250708114714-i22h3i9"}
+    {: id="20250708114714-reus7ga"}
+  {: id="20250708114714-z4j1mcd"}
+- {: id="20250708114714-ljhm3yq" style="background-color: var(--b3-font-background3); --b3-parent-background: var(--b3-font-background3);"}### .action{$saturday| date "20060102 Sat"}
+  {: id="20250708114714-6ne8ryu"}
 
-  - {: id="20250707193056-8bbktwd"}计划
-    {: id="20250707193056-vijnfyf"}
+  - {: style="background-color: var(--b3-font-background2); --b3-parent-background: var(--b3-font-background2);" id="20250708114714-964jvp4"}计划
+    {: id="20250708114714-bvgwo6e"}
 
-    - {: id="20250707193056-q8570ks"}[ ] 
-      {: id="20250707193056-x93pyvd"}
-    - {: id="20250707193056-9dvgjv0"}[ ] 
-      {: id="20250707193056-f8je917"}
-    - {: id="20250707193056-g6r5qwa"}[ ] 
-      {: id="20250707193056-gndht6c"}
-    {: id="20250707193056-1yek2gc"}
-  - {: id="20250707193056-ewufb7d"}实际完成情况
-    {: id="20250707193056-ra48iu1"}
+    - {: id="20250708114714-u45et8f"}[ ] 
+      {: id="20250708114714-zcwlnuw"}
+    - {: id="20250708114714-w7e0504"}[ ] 
+      {: id="20250708114714-rtl6wye"}
+    - {: id="20250708114714-c1asyju"}[ ] 
+      {: id="20250708114714-bx9yqks"}
+    {: id="20250708114714-o5z9waj"}
+  - {: style="background-color: var(--b3-font-background1); --b3-parent-background: var(--b3-font-background1);" id="20250708114714-dhxb3sm"}实际完成情况
+    {: id="20250708114714-y2lry3l"}
 
-    - {: id="20250707193056-ik1c7wv"}
-      {: id="20250707193056-zpwvfxw"}
-    - {: id="20250707193056-8m5fvao"}
-      {: id="20250707193056-kovq3kl"}
-    - {: id="20250707193056-8gcbtmn"}
-      {: id="20250707193056-r3r5z70"}
-    {: id="20250707193056-ddxbg76"}
-  - {: id="20250707193056-vdig2mn"}明天如何改进
-    {: id="20250707193056-snumldl"}
+    - {: id="20250708114714-6l4ygt7"}
+      {: id="20250708114714-qe3thuc"}
+    - {: id="20250708114714-vfarsia"}
+      {: id="20250708114714-6pc0xws"}
+    - {: id="20250708114714-wgaznto"}
+      {: id="20250708114714-8fpe24y"}
+    {: id="20250708114714-763ryiu"}
+  - {: id="20250708114714-8snsdtu" style="background-color: var(--b3-font-background4); --b3-parent-background: var(--b3-font-background4);"}明天如何改进
+    {: id="20250708114714-12yzpde"}
 
-    - {: id="20250707193056-yvdv6rz"}
-      {: id="20250707193056-tmjpssd"}
-    {: id="20250707193056-z8qozpi"}
-  {: id="20250707193056-zx6qem6"}
-- {: id="20250707193122-whqzuqu"}.action{$sunday | date "20060102 Sun"}
-  {: id="20250707193122-o4s72v1"}
+    - {: id="20250708114714-vbrnfnp"}
+      {: id="20250708114714-co6kzmx"}
+    {: id="20250708114714-d9zm7ga"}
+  {: id="20250708114714-6pq5hx2"}
+- {: id="20250708114714-1zio8hu" style="background-color: var(--b3-font-background3); --b3-parent-background: var(--b3-font-background3);"}### .action{$sunday| date "20060102 Sun"}
+  {: id="20250708114714-i9s1vsw"}
 
-  - {: id="20250707193127-j7ubfuz"}计划
-    {: id="20250707193127-g0qpejh"}
+  - {: id="20250708114714-rgs5aa7" style="background-color: var(--b3-font-background2); --b3-parent-background: var(--b3-font-background2);"}计划
+    {: id="20250708114714-xt0z0yj"}
 
-    - {: id="20250707193127-6g5pp6w"}[ ] 
-      {: id="20250707193127-c28cfpg"}
-    - {: id="20250707193127-v4ej9nw"}[ ] 
-      {: id="20250707193127-jefp1et"}
-    - {: id="20250707193127-2zqtnxg"}[ ] 
-      {: id="20250707193127-ww5dimq"}
-    {: id="20250707193127-2muulks"}
-  - {: id="20250707193127-oe4eahr"}实际完成情况
-    {: id="20250707193127-5r8tzg2"}
+    - {: id="20250708114714-9xrsr6l"}[ ] 
+      {: id="20250708114714-jjwr3k2"}
+    - {: id="20250708114714-xeyt6gu"}[ ] 
+      {: id="20250708114714-cvwqdmn"}
+    - {: id="20250708114714-93avt2x"}[ ] 
+      {: id="20250708114714-gsp9wjh"}
+    {: id="20250708114714-pxg24kj"}
+  - {: id="20250708114714-n12i886" style="background-color: var(--b3-font-background1); --b3-parent-background: var(--b3-font-background1);"}实际完成情况
+    {: id="20250708114714-2z62uc0"}
 
-    - {: id="20250707193127-os6m92a"}
-      {: id="20250707193127-lrd5j6q"}
-    - {: id="20250707193127-mawgtcs"}
-      {: id="20250707193127-83ffc85"}
-    - {: id="20250707193127-4wugbem"}
-      {: id="20250707193127-ajxuc88"}
-    {: id="20250707193127-91l5z7h"}
-  - {: id="20250707193127-4kqi603"}明天如何改进
-    {: id="20250707193127-55vorv0"}
+    - {: id="20250708114714-3bpqqd6"}
+      {: id="20250708114714-vyjwm2q"}
+    - {: id="20250708114714-l225aj4"}
+      {: id="20250708114714-bbg3uem"}
+    - {: id="20250708114714-p8ndi56"}
+      {: id="20250708114714-wztz3t7"}
+    {: id="20250708114714-f2hw11e"}
+  - {: id="20250708114714-xoqkijj" style="background-color: var(--b3-font-background4); --b3-parent-background: var(--b3-font-background4);"}明天如何改进
+    {: id="20250708114714-vn2t5gp"}
 
-    - {: id="20250707193127-y78m0ku"}
-      {: id="20250707193127-gozf9ob"}
-    {: id="20250707193127-y02kc8x"}
-  {: id="20250707193127-98m0djp"}
-{: custom-f="bg" id="20250707192645-004d4q9"}
+    - {: id="20250708114714-3mr6mpt"}
+      {: id="20250708114714-omfhcr5"}
+    {: id="20250708114714-dtwvt5v"}
+  {: id="20250708114714-jqeqyt6"}
+{: custom-f="bg" id="20250708114714-x9spsfk"}
 
 
 ## 习惯打卡

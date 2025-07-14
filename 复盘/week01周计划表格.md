@@ -1,5 +1,6 @@
 .action{/*<!-- 计算本周每一天的日期 -->*/}
-.action{$monday := now.AddDate 0 0 (int (sub 1 (int (now | Weekday))))}
+.action{$weekday := ternary 7 (int (now | Weekday)) (eq (int (now | Weekday)) 0)}
+.action{$monday := now.AddDate 0 0 (int (sub 1 $weekday))}
 .action{$tuesday := $monday.AddDate 0 0 1}
 .action{$wednesday := $monday.AddDate 0 0 2}
 .action{$thursday := $monday.AddDate 0 0 3}
