@@ -1,0 +1,1 @@
+字符数:.action{ (statBlock .id).RuneCount} 字数:.action{ (statBlock .id).WordCount}
