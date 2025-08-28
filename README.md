@@ -302,6 +302,98 @@ Content: .action{$b.Content}
 
 ```
 
+### 动态图标
+
+#### 基本语法
+
+详见[Add internal kernel API `/api/icon/getDynamicIcon` ](https://github.com/siyuan-note/siyuan/pull/12939)  
+
+动态图标支持显示日期、倒数日、周数还有指定文字
+
+语法：
+
+```markdown
+![](https://assets.b3logfile.com/siyuan/1610205759005/api/icon/getDynamicIcon?type=2&color=red&lang=zh_CN&date=2024-10-27)
+```
+
+目前有8种color和8种type
+
+<img alt="PixPin_2024-10-28_12-00-52" src="assets/PixPin_2024-10-28_12-00-52-20241028120103-kba8vvk.png" />
+
+- ​`type`：图标类型，默认为1
+
+  - ​`type=1`：显示年月日星期
+  - ​`type=2`：显示年月日
+  - ​`type=3`：仅显示年月
+  - ​`type=4`：仅显示年
+  - ​`type=5`：当前周数
+  - ​`type=6`：仅返回星期
+  - ​`type=7`：倒数日
+  - ​`type=8`：文字图标
+- ​`lang`：默认为当前思源笔记使用的语言，仅在type\=1、2、3、5、6、7时有效
+
+  - ​`lang=zh_CN`：显示中文简体
+  - ​`lang=zh_CHT`：显示中文繁体
+  - ​`lang=en_US`/`lang=en_ES`：显示英文
+  - 其他语言用英文显示
+
+  <img alt="PixPin_2024-10-28_12-01-31" src="assets/PixPin_2024-10-28_12-01-31-20241028120132-npope2f.png" />
+- ​`color`：设置配色，一共八种配色
+
+  - ​`color=red`​
+  - ​`color=blue`​
+  - ​`color=yellow`​
+  - ​`color=green`​
+  - ​`color=purple`​
+  - ​`color=pink`​
+  - ​`color=orange`​
+  - ​`color=grey`​[https://github.com/user-attachments/assets/52d1f480-df17-4ac0-9790-dba84b7e5d26](https://github.com/user-attachments/assets/52d1f480-df17-4ac0-9790-dba84b7e5d26)
+
+  <img alt="PixPin_2024-10-28_12-01-45" src="assets/PixPin_2024-10-28_12-01-45-20241028120150-jsgqpq0.png" />
+
+  支持通过`color=FE3427` 或`color=%23FE3427`设置自定义颜色（注意：直接输出`color=#FE3427`，会由于`#`是URL特殊符号，导致URL被截断，会使得参数不起作用）
+
+  <img alt="PixPin_2024-10-28_12-02-36" src="assets/PixPin_2024-10-28_12-02-36-20241028120238-74iug34.png" style="width: 232px;" />​
+
+  ```markdown
+  ![](api/icon/getDynamicIcon?color=FE3427&type=3)
+  ```
+- ​`date`: 设置日期，默认为当前日期，日期设置格式为`yyyy-mm-dd`，仅在type\=1-7时有效
+- ​`weekdayType`: 设置星期格式，默认为第一种类型，仅在type\=1、6时有效
+
+  - 中文
+
+    - ​`weekdayType=1`：`"周日", "周一", "周二", "周三", "周四", "周五", "周六"`​
+    - ​`weekdayType=2`：`"周天", "周一", "周二", "周三", "周四", "周五", "周六"`​
+    - ​`weekdayType=3`：`"星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"`​
+    - ​`weekdayType=4`：`"星期天", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六`​[https://github.com/user-attachments/assets/f904932b-b891-4dc9-a68e-abb53c47a3c7](https://github.com/user-attachments/assets/f904932b-b891-4dc9-a68e-abb53c47a3c7)
+
+    <img alt="PixPin_2024-10-28_12-02-57" src="assets/PixPin_2024-10-28_12-02-57-20241028120259-9wmwoy9.png" />
+  - 英文
+
+    - ​`weekdayType=1`：`"Sun","Mon","Tue","Wed","Thu","Fri","Sat"`​
+    - ​`weekdayType=2`：`"SUN","MON","TUE","WED","THU","FRI","SAT"`​
+    - ​`weekdayType=3`：`"Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"`​
+    - ​`weekdayType=4`：`"SUNDAY","MONDAY","TUESDAY","WEDNESDAY","THURSDAY","FRIDAY","SATURDAY"`  
+      [https://github.com/user-attachments/assets/d307cff9-a037-4bed-84f9-4e9501155712](https://github.com/user-attachments/assets/d307cff9-a037-4bed-84f9-4e9501155712)
+
+    <img alt="PixPin_2024-10-28_12-03-16" src="assets/PixPin_2024-10-28_12-03-16-20241028120318-fsa1e8y.png" />
+- ​`content`：设置文字图标的内容，默认为空，仅在type\=8时有效
+
+  注意content输入下面特殊符号，需要用URL编码替代，否则导致解析参数失败或丢失
+
+  - ​`%`: `%25`​
+  - ​`+`: `%2B`​
+  - ​`#`: `%23`​
+
+#### 日记图标如何自动使用动态图标
+
+创建日记时如果要自动设置文档图标为动态图标，在最末尾添加模板语法，设置文档图标为动态图标
+
+```template
+{: icon="api/icon/getDynamicIcon?type=5&color=%23d23f31&date=.action{now | date "2006-01-02"}"  type="doc"}
+```
+
 ## 模板编程相关基本语法
 
 复杂的模板函数文档可见：[sprig](http://masterminds.github.io/sprig/)
