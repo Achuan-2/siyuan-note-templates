@@ -1,6 +1,6 @@
-## 思源笔记模板存放位置和使用
+## 1 思源笔记模板存放位置和使用
 
-### 模板存放在哪里？
+### 1.1 模板存放在哪里？
 
 思源的模板文件夹目录在`工作空间/data/templates` ，可以设置文件夹进行分类。
 
@@ -12,13 +12,13 @@
 
 <img alt="PixPin_2025-08-28_16-29-37" src="https://assets.b3logfile.com/siyuan/1610205759005/assets/PixPin_2025-08-28_16-29-37-20250828162940-77qusb0.png" />
 
-### 如何调用已有的模板？
+### 1.2 如何调用已有的模板？
 
 在编辑器内输入斜杠/，第一个按钮就是 template，进入即可选择模板。
 
 <img alt="image.png" src="https://assets.b3logfile.com/siyuan/1610205759005/assets/network-asset-1649157639431-5307ca9d-a31b-48ac-9b20-62121eebbd63-20240405115403-xcd0wgb.png" />
 
-### 如何创建自己的模板？
+### 1.3 如何创建自己的模板？
 
 如果是普通文本只涉及排版、块颜色的模板，直接在思源设计，然后选中导出模板，之后调用就可以（虽然这样导出的模板会有很多无关的id信息）
 
@@ -38,13 +38,13 @@
 
 <img alt="PixPin_2025-08-28_16-28-40" src="https://assets.b3logfile.com/siyuan/1610205759005/assets/PixPin_2025-08-28_16-28-40-20250828162847-gwdz6vt.png" />
 
-### 我的模板
+### 1.4 我的模板
 
 开源在GitHub：[https://github.com/Achuan-2/siyuan-note-templates](https://github.com/Achuan-2/siyuan-note-templates)
 
-## 思源笔记内置变量和函数
+## 2 思源笔记内置变量和函数
 
-### 独有变量
+### 2.1 独有变量
 
 - ​`title`：该变量用于插入当前文档名。比如模板内容为 `# .action{.title}`，则调用后会以一级标题语法插入到当前文档内容中
 - ​`id`：该变量用于插入当前文档 ID
@@ -60,7 +60,7 @@
 
 > 注意这里使用的时候必须前面要加上 `.`，也就是 `.title` 而非 `title`。因为 `.`表示当前对象，有兴趣可以参考这个：[Template · Go 语言中文文档](https://ld246.com/forward?goto=https%3A%2F%2Fwww.topgoer.com%2F%25E5%25B8%25B8%25E7%2594%25A8%25E6%25A0%2587%25E5%2587%2586%25E5%25BA%2593%2Ftemplate.html%23%25E6%25A8%25A1%25E6%259D%25BF%25E8%25AF%25AD%25E6%25B3%2595 "Template · Go语言中文文档")。
 
-### 独有函数
+### 2.2 独有函数
 
 - ​`getHPathByID`：该函数用于返回块 ID 对应块的可读路径
 
@@ -113,8 +113,37 @@
 - ​`WeekdayCN`：该函数用于返回周几 `Sunday=日, Monday=一, ..., Saturday=六`​
 - ​`WeekdayCN2`：该函数用于返回周几 `Sunday=天, Monday=一, ..., Saturday=六`​
 - ​`ISOWeek`：该函数用于返回第几周
-- ​`ISOYear`：返回ISOWeek所在的年份
-- ​`ISOMonth`： 返回指定日期所属的 ISO 8601 周的第一天所在的月份。
+
+  如果今年12月的最后一周的周四不在今年而在明年，这一周会被认为是明年的第一周，而不是今年。因为2025年12月31日是周三，所以2025年只有52周，没有第52周。每年12月28日一定是今年最后一周，所以可以根据每年12月28日获取今年一共有多少周
+
+  ```template
+  .action{/*<!-- 获取今年12-28日日期（因为一定在今年最后一周） -->*/}
+  .action{$this_year :=now | date "2006"} 
+  .action{$this_year_last :=toDate "2006-01-02" ( printf "%s-12-28" $this_year)}
+
+
+  第`.action{now | ISOWeek}`周/共`.action{$this_year_last | ISOWeek}`周
+  ```
+- ​`ISOYear`：返回ISOWeek所在的年份，如果今年12月的最后一周的周四不在今年而在明年，这一周会被认为是明年的第一周，而不是今年
+
+  ```template
+  .action{now | ISOYear}
+  ```
+- ​`ISOMonth`： 返回指定日期所属周的星期一所在的月份。
+
+  ```template
+  .action{$customDate :=parseTime "2025-08-27"}
+  .action{$month := $customDate | ISOMonth}
+  2025-08-27的ISOMonth是`.action{ternary (nospace (cat "0" $month)) $month (lt $month 10)}`
+  ```
+- ​`ISOWeekDate`： 返回指定周几的日期
+
+  返回本周一和周日的日期
+
+  ```template
+  .action{now | ISOWeekDate 1| date "20060102 Mon"}
+  .action{now | ISOWeekDate 7| date "20060102 Mon"}
+  ```
 - ​`pow`：指数计算，返回整数
 - ​`powf`：指数计算，返回浮点数
 - ​`log`：对数计算，返回整数
@@ -127,7 +156,7 @@
 .action{$blocks :=queryBlocks "SELECT * FROM blocks WHERE content LIKE '?' AND updated > '?' LIMIT ?" "%foo%" $today "3"}
 ```
 
-## 思源特有功能：kramdown、分栏、sql查询
+## 思源特有功能：kramdown、分栏、sql查询、动态图标
 
 ### 模板如何设置字体颜色、背景色等样式
 
@@ -183,14 +212,14 @@
 
 {{{col
 {{{row
-### ✨ fisrt
+### 2.3 ✨ fisrt
 {: style="color: var(--b3-card-error-color);background-color: var(--b3-card-error-background);"}
 - text
 
 }}}
 
 {{{row
-### 🎉 second
+### 2.4 🎉 second
 {: style="color: var(--b3-card-info-color);background-color: var(--b3-card-info-background);"}
 - text
 }}}
@@ -204,27 +233,27 @@
 
 {{{col
 {{{row
-### ✨ fisrt
+### 2.5 ✨ fisrt
 {: style="color: var(--b3-card-error-color);background-color: var(--b3-card-error-background);"}
 - text
 
 }}}
 
 {{{row
-### 🎉 second
+### 2.6 🎉 second
 {: style="color: var(--b3-card-info-color);background-color: var(--b3-card-info-background);"}
 - text
 }}}
 
 {{{row
-### ✏ three
+### 2.7 ✏ three
 {: style="color: var(--b3-card-success-color);background-color: var(--b3-card-success-background);"}
 - text
 
 }}}
 
 {{{row
-### 🎯 four 
+### 2.8 🎯 four 
 {: style="color: var(--b3-card-warning-color);background-color: var(--b3-card-warning-background);"}
 - text
 
@@ -247,7 +276,7 @@
 
 .action{/* 模板块嵌入例子2：查询今天更新的所有笔记，root_id != '.action{.id}'排除了查询页面的内容 */}
 .action{$week := add (mod (div ((toDate "2006-01-02" "2050-03-13").Sub now).Hours 24) 7) 1}
-## .action{now | date "2006-01-02"} .action{last (slice (list "星期六" "星期五" "星期四" "星期三" "星期二" "星期一" " 星期天") 0 $week )} 笔记汇总
+## 3 .action{now | date "2006-01-02"} .action{last (slice (list "星期六" "星期五" "星期四" "星期三" "星期二" "星期一" " 星期天") 0 $week )} 笔记汇总
 
 {{SELECT * FROM blocks WHERE updated > ".action{now | date "20060102"}" AND type !='d' AND root_id != '.action{.id}' order by created }}
 
@@ -256,7 +285,7 @@
 
 .action{/* 模板块嵌入例子3：查询近3天更新的所有笔记，date_modify "-72h" 是调用函数=当前时间-h */}
 <!--  -->
-## .action{(now | date_modify "-72h")| date "20060102"} -  .action{now | date "2006-01-02"} 创建笔记汇总
+## 4 .action{(now | date_modify "-72h")| date "20060102"} -  .action{now | date "2006-01-02"} 创建笔记汇总
 
 {{SELECT * FROM blocks WHERE updated > ".action{(now | date_modify "-72h") | date "20060102"}" AND type !='d' AND root_id != '.action{.id}' order by created }}
 
@@ -286,7 +315,7 @@ Content: .action{$b.Content}
 #### 以块引形式展示今天更新的笔记
 
 ```markdown
-## .action{ now | date "2006-01-02  Mon "} 今天更新的笔记文档
+## 5 .action{ now | date "2006-01-02  Mon "} 今天更新的笔记文档
 
 
 .action{$today := now | date "20060102"}
@@ -886,7 +915,7 @@ Content: .action{$b.Content}
 
 字符串操作函数在正常 md 模板里面用的没那么多，但是在数据库模板列里面可能会大量用到。
 
-> 只列举了很小的一部分，完整文档见 [https://masterminds.github.io/sprig/strings.html](https://ld246.com/forward?goto=https%3A%2F%2Fmasterminds.github.io%2Fsprig%2Fstrings.html) 和 [https://masterminds.github.io/sprig/string_slice.html](https://ld246.com/forward?goto=https%3A%2F%2Fmasterminds.github.io%2Fsprig%2Fstring_slice.html)
+> 只列举了很小的一部分，完整文档见 [https://masterminds.github.io/sprig/strings.html](https://masterminds.github.io/sprig/strings.html) 和 [https://masterminds.github.io/sprig/string_slice.html](https://ld246.com/forward?goto=https%3A%2F%2Fmasterminds.github.io%2Fsprig%2Fstring_slice.html)
 
 - ​`trim <str>`: `str`， 将前后的空白字符去掉
 - ​`repeat <int> <str>`：`str`，将给定的字符串重复若干次
