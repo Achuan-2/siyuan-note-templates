@@ -62,7 +62,7 @@
 
 ### 独有函数
 
-内容查询
+#### 内容查询
 
 - ​`getHPathByID`：该函数用于返回块 ID 对应块的可读路径
 
@@ -98,7 +98,7 @@
 .action{$blocks :=queryBlocks "SELECT * FROM blocks WHERE content LIKE '?' AND updated > '?' LIMIT ?" "%foo%" $today "3"}
 ```
 
-日期相关
+#### 日期相关
 
 - ​`parseTime`：该函数用于将时间格式的字符串解析为 `time.Time` 类型，以便使用更多格式化方法渲染该时间
 
@@ -110,7 +110,7 @@
 - ​`Weekday`：该函数用于返回周几 `Sunday=0, Monday=1, ..., Saturday=6`​
 - ​`WeekdayCN`：该函数用于返回周几 `Sunday=日, Monday=一, ..., Saturday=六`​
 - ​`WeekdayCN2`：该函数用于返回周几 `Sunday=天, Monday=一, ..., Saturday=六`​
-- ​`ISOWeek`：该函数用于返回第几周
+- ​`ISOWeek`：该函数用于返回第几周，版本要求：思源笔记v3.3.1
 
   如果今年12月的最后一周的周四不在今年而在明年，这一周会被认为是明年的第一周，而不是今年。因为2025年12月31日是周三，所以2025年只有52周，没有第52周。每年12月28日一定是今年最后一周，所以可以根据每年12月28日获取今年一共有多少周
 
@@ -122,19 +122,19 @@
 
   第`.action{now | ISOWeek}`周/共`.action{$this_year_last | ISOWeek}`周
   ```
-- ​`ISOYear`：返回ISOWeek所在的年份，如果今年12月的最后一周的周四不在今年而在明年，这一周会被认为是明年的第一周，而不是今年
+- ​`ISOYear`：返回ISOWeek所在的年份，如果今年12月的最后一周的周四不在今年而在明年，这一周会被认为是明年的第一周，而不是今年，版本要求：思源笔记v3.3.1
 
   ```template
   .action{now | ISOYear}
   ```
-- ​`ISOMonth`： 返回指定日期所属周的星期一所在的月份。
+- ​`ISOMonth`： 返回指定日期所属周的星期一所在的月份，版本要求：思源笔记v3.3.1
 
   ```template
   .action{$customDate :=parseTime "2025-08-27"}
   .action{$month := $customDate | ISOMonth}
   2025-08-27的ISOMonth是`.action{ternary (nospace (cat "0" $month)) $month (lt $month 10)}`
   ```
-- ​`ISOWeekDate`： 返回指定周几的日期
+- ​`ISOWeekDate`： 返回指定周几的日期，版本要求：思源笔记v3.3.1
 
   返回本周一和周日的日期
 
@@ -143,7 +143,7 @@
   .action{now | ISOWeekDate 7| date "20060102 Mon"}
   ```
 
-内容统计
+#### 内容统计
 
 - ​`statBlock`：该函数用于统计块内容
 
@@ -160,7 +160,7 @@
 - ​`runeCount`：该函数用于返回字符串中的字符数
 - ​`wordCount`：该函数用于返回字符串中的字数
 
-数值计算
+#### 数值计算
 
 - ​`pow`：指数计算，返回整数
 - ​`powf`：指数计算，返回浮点数
@@ -793,7 +793,7 @@ Content: .action{$b.Content}
   - ​`Weekday`：该函数用于返回周几 `Sunday=0, Monday=1, ..., Saturday=6`​
   - ​`WeekdayCN`：该函数用于返回周几 `Sunday=日, Monday=一, ..., Saturday=六`​
   - ​`WeekdayCN2`：该函数用于返回周几 `Sunday=天, Monday=一, ..., Saturday=六`​
-  - ​`ISOWeek`：该函数用于返回第几周
+  - ​`ISOWeek`：该函数用于返回第几周，版本要求：思源笔记v3.3.1
 
     如果今年12月的最后一周的周四不在今年而在明年，这一周会被认为是明年的第一周，而不是今年。因为2025年12月31日是周三，所以2025年只有52周，没有第52周。每年12月28日一定是今年最后一周，所以可以根据每年12月28日获取今年一共有多少周
 
@@ -805,19 +805,19 @@ Content: .action{$b.Content}
 
     第`.action{now | ISOWeek}`周/共`.action{$this_year_last | ISOWeek}`周
     ```
-  - ​`ISOYear`：返回ISOWeek所在的年份，如果今年12月的最后一周的周四不在今年而在明年，这一周会被认为是明年的第一周，而不是今年
+  - ​`ISOYear`：返回ISOWeek所在的年份，如果今年12月的最后一周的周四不在今年而在明年，这一周会被认为是明年的第一周，而不是今年，版本要求：思源笔记v3.3.1
 
     ```template
     .action{now | ISOYear}
     ```
-  - ​`ISOMonth`： 返回指定日期所属周的星期一所在的月份。
+  - ​`ISOMonth`： 返回指定日期所属周的星期一所在的月份，版本要求：思源笔记v3.3.1
 
     ```template
     .action{$customDate :=parseTime "2025-08-27"}
     .action{$month := $customDate | ISOMonth}
     2025-08-27的ISOMonth是`.action{ternary (nospace (cat "0" $month)) $month (lt $month 10)}`
     ```
-  - ​`ISOWeekDate`： 返回指定周几的日期
+  - ​`ISOWeekDate`： 返回指定周几的日期，版本要求：思源笔记v3.3.1
 
     返回本周一和周日的日期
 
