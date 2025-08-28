@@ -1,3 +1,47 @@
+## 思源笔记模板存放位置和使用
+
+### 模板存放在哪里？
+
+思源的模板文件夹目录在`工作空间/data/templates` ，可以设置文件夹进行分类。
+
+思源内置文档导出为模板功能，导出的模板默认存放在模板文件夹目录根目录下。
+
+<img alt="PixPin_2025-08-28_16-29-19" src="https://assets.b3logfile.com/siyuan/1610205759005/assets/PixPin_2025-08-28_16-29-19-20250828162921-fchup05.png" style="width: 311px;" />​
+
+也可以自己在工作空间/data/templates新建md文件，如周计划.md，完成存放
+
+<img alt="PixPin_2025-08-28_16-29-37" src="https://assets.b3logfile.com/siyuan/1610205759005/assets/PixPin_2025-08-28_16-29-37-20250828162940-77qusb0.png" />
+
+### 如何调用已有的模板？
+
+在编辑器内输入斜杠/，第一个按钮就是 template，进入即可选择模板。
+
+<img alt="image.png" src="https://assets.b3logfile.com/siyuan/1610205759005/assets/network-asset-1649157639431-5307ca9d-a31b-48ac-9b20-62121eebbd63-20240405115403-xcd0wgb.png" />
+
+### 如何创建自己的模板？
+
+如果是普通文本只涉及排版、块颜色的模板，直接在思源设计，然后选中导出模板，之后调用就可以（虽然这样导出的模板会有很多无关的id信息）
+
+如果涉及关于时间、查询之类动态的模板，需要了解一些思源笔记内置变量与函数、sql语句、golang基础语法
+
+考虑到模板语法中的`$`等字符，写语法时容易渲染成数学公式等样式，思源笔记`v3.3.0`以后，支持以template代码块来承载模板语法：代码块语言设置为 template 时，认为是存放模板语法的地方，导出为模板，代码块里的模板内容会变为纯文本段落，这样就可以直接导出带有模板语法的模板，调用模板时就会根据模板语法自动填充内容，创建模板变得所见即所得
+
+在思源笔记创建template代码块，存放模板编程语法
+
+<img alt="PixPin_2025-08-28_16-30-57" src="https://assets.b3logfile.com/siyuan/1610205759005/assets/PixPin_2025-08-28_16-30-57-20250828163059-e2odzq6.png" />
+
+导出为模板
+
+<img alt="PixPin_2025-08-28_16-30-40" src="https://assets.b3logfile.com/siyuan/1610205759005/assets/PixPin_2025-08-28_16-30-40-20250828163043-k3itbr1.png" />
+
+再次调用
+
+<img alt="PixPin_2025-08-28_16-28-40" src="https://assets.b3logfile.com/siyuan/1610205759005/assets/PixPin_2025-08-28_16-28-40-20250828162847-gwdz6vt.png" />
+
+### 我的模板
+
+开源在GitHub：[https://github.com/Achuan-2/siyuan-note-templates](https://github.com/Achuan-2/siyuan-note-templates)
+
 ## 思源笔记内置变量和函数
 
 ### 独有变量
@@ -85,7 +129,7 @@
 
 ## 思源特有功能：kramdown、分栏、sql查询
 
-### 模板如何字体颜色、背景色等样式
+### 模板如何设置字体颜色、背景色等样式
 
 使用 [kramdown](https://kramdown.gettalong.org/?utm_source=ld246.com) 语法，
 
@@ -540,8 +584,7 @@ Content: .action{$b.Content}
     - ​`mod <int64> <int64>`：`int64`，求余
     - ​`min [<int64>,]` 和 `max [<int64>,]`：`int64`，求最小值和最大值
   - 浮点型 float 计算：完整文档见 [https://masterminds.github.io/sprig/mathf.html](https://ld246.com/forward?goto=https%3A%2F%2Fmasterminds.github.io%2Fsprig%2Fmathf.html)
-  - > **注：Sprig 的数值运算是在 int64 和 float64 类型上进行的，但是很多函数只接受 int 或 float 类型，所以很多时候要配合类型转换函数来使用，这一点会在下面的小节中详细说明**
-    >
+  - **注：Sprig 的数值运算是在 int64 和 float64 类型上进行的，但是很多函数只接受 int 或 float 类型，所以很多时候要配合类型转换函数来使用**
 - 思源内置数值函数
 
   - ​`pow <int>`：指数计算，返回整数
@@ -553,8 +596,6 @@ Content: .action{$b.Content}
     - [https://pkg.go.dev/github.com/dustin/go-humanize#FormatFloat](https://ld246.com/forward?goto=https%3A%2F%2Fpkg.go.dev%2Fgithub.com%2Fdustin%2Fgo-humanize%23FormatFloat)
     - [https://github.com/siyuan-note/siyuan/issues/11158](https://ld246.com/forward?goto=https%3A%2F%2Fgithub.com%2Fsiyuan-note%2Fsiyuan%2Fissues%2F11158)
     - [https://liuyun.io/article/1713131424994](https://ld246.com/forward?goto=https%3A%2F%2Fliuyun.io%2Farticle%2F1713131424994)
-
-
 
 案例:
 
