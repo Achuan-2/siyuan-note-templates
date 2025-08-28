@@ -6,23 +6,23 @@
 
 思源内置文档导出为模板功能，导出的模板默认存放在模板文件夹目录根目录下。
 
-<img alt="PixPin_2025-08-28_16-29-19" src="https://assets.b3logfile.com/siyuan/1610205759005/assets/PixPin_2025-08-28_16-29-19-20250828162921-fchup05.png" style="width: 311px;" />​
+<img alt="PixPin_2025-08-28_16-29-19" src="https://s2.loli.net/2025/08/28/Rq8ynZ5CxmLAGrz.png" style="width: 311px;" />​
 
 也可以自己在`工作空间/data/templates`新建md文件，如周计划.md，完成存放
 
-<img alt="PixPin_2025-08-28_16-29-37" src="https://assets.b3logfile.com/siyuan/1610205759005/assets/PixPin_2025-08-28_16-29-37-20250828162940-77qusb0.png" />
+<img alt="PixPin_2025-08-28_16-29-37" src="https://s2.loli.net/2025/08/28/Oz7nsqB5p2SkuYW.png" />
 
 ### 如何调用已有的模板？
 
 在编辑器内输入斜杠/，第一个按钮就是 template，进入即可选择模板。
 
-<img alt="image.png" src="https://assets.b3logfile.com/siyuan/1610205759005/assets/network-asset-1649157639431-5307ca9d-a31b-48ac-9b20-62121eebbd63-20240405115403-xcd0wgb.png" />
+<img alt="image.png" src="https://s2.loli.net/2025/08/28/z3t2kKALBRUaVjq.webp" />
 
 ### 如何创建自己的模板？
 
 如果是普通文本只涉及排版、块颜色的模板，直接在思源设计，然后选中导出模板，之后调用就可以（虽然这样导出的模板会有很多无关的id信息）
 
-<img alt="PixPin_2025-08-28_16-29-19" src="https://assets.b3logfile.com/siyuan/1610205759005/assets/PixPin_2025-08-28_16-29-19-20250828162921-fchup05.png" style="width: 311px;" />​
+<img alt="PixPin_2025-08-28_16-29-19" src="https://s2.loli.net/2025/08/28/Rq8ynZ5CxmLAGrz.png" style="width: 311px;" />​
 
 如果涉及关于时间填充、查询之类动态的模板，需要了解一些思源笔记内置变量与函数、sql语句、模板基础编程语法。考虑到模板语法中含有`$`等字符，写语法时容易渲染成数学公式等样式，不方便直接在思源笔记直接写模板语法
 
@@ -34,15 +34,15 @@
 
 在思源笔记创建template代码块，存放模板编程语法
 
-<img alt="PixPin_2025-08-28_16-30-57" src="https://assets.b3logfile.com/siyuan/1610205759005/assets/PixPin_2025-08-28_16-30-57-20250828163059-e2odzq6.png" />
+<img alt="PixPin_2025-08-28_16-30-57" src="https://s2.loli.net/2025/08/28/TjtxBMn2FNoP7AE.png" />
 
 导出为模板
 
-<img alt="PixPin_2025-08-28_16-30-40" src="https://assets.b3logfile.com/siyuan/1610205759005/assets/PixPin_2025-08-28_16-30-40-20250828163043-k3itbr1.png" />
+<img alt="PixPin_2025-08-28_16-30-40" src="https://s2.loli.net/2025/08/28/ERBvODkjAGyUhpg.png" />
 
 调用模板
 
-<img alt="PixPin_2025-08-28_16-28-40" src="https://assets.b3logfile.com/siyuan/1610205759005/assets/PixPin_2025-08-28_16-28-40-20250828162847-gwdz6vt.png" />
+<img alt="PixPin_2025-08-28_16-28-40" src="https://s2.loli.net/2025/08/28/4KAt8xM3UZs2iwg.png" />
 
 ### 我的模板
 
@@ -359,12 +359,12 @@ Content: .action{$b.Content}
 语法：
 
 ```markdown
-![](https://assets.b3logfile.com/siyuan/1610205759005/api/icon/getDynamicIcon?type=2&color=red&lang=zh_CN&date=2024-10-27)
+![](api/icon/getDynamicIcon?type=2&color=red&lang=zh_CN&date=2024-10-27)
 ```
 
 目前有8种color和8种type
 
-<img alt="PixPin_2024-10-28_12-00-52" src="assets/PixPin_2024-10-28_12-00-52-20241028120103-kba8vvk.png" />
+<img alt="PixPin_2024-10-28_12-00-52" src="https://s2.loli.net/2025/08/28/MBfmv2bcA1GSqkF.png" />
 
 - ​`type`：图标类型，默认为1
 
@@ -383,7 +383,7 @@ Content: .action{$b.Content}
   - ​`lang=en_US`/`lang=en_ES`：显示英文
   - 其他语言用英文显示
 
-  <img alt="PixPin_2024-10-28_12-01-31" src="assets/PixPin_2024-10-28_12-01-31-20241028120132-npope2f.png" />
+  <img alt="PixPin_2024-10-28_12-01-31" src="https://s2.loli.net/2025/08/28/LgIVkuPh34xEfyc.png" />
 - ​`color`：设置配色，一共八种配色
 
   - ​`color=red`​
@@ -395,11 +395,11 @@ Content: .action{$b.Content}
   - ​`color=orange`​
   - ​`color=grey`​[https://github.com/user-attachments/assets/52d1f480-df17-4ac0-9790-dba84b7e5d26](https://github.com/user-attachments/assets/52d1f480-df17-4ac0-9790-dba84b7e5d26)
 
-  <img alt="PixPin_2024-10-28_12-01-45" src="assets/PixPin_2024-10-28_12-01-45-20241028120150-jsgqpq0.png" />
+  <img alt="PixPin_2024-10-28_12-01-45" src="https://s2.loli.net/2025/08/28/RAeKo9jtkNr8d4z.png" />
 
   支持通过`color=FE3427` 或`color=%23FE3427`设置自定义颜色（注意：直接输出`color=#FE3427`，会由于`#`是URL特殊符号，导致URL被截断，会使得参数不起作用）
 
-  <img alt="PixPin_2024-10-28_12-02-36" src="assets/PixPin_2024-10-28_12-02-36-20241028120238-74iug34.png" style="width: 232px;" />​
+  <img alt="PixPin_2024-10-28_12-02-36" src="https://s2.loli.net/2025/08/28/ZvCnfBHAOJmgUi1.png" style="width: 232px;" />​
 
   ```markdown
   ![](api/icon/getDynamicIcon?color=FE3427&type=3)
@@ -414,7 +414,7 @@ Content: .action{$b.Content}
     - ​`weekdayType=3`：`"星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"`​
     - ​`weekdayType=4`：`"星期天", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六`​[https://github.com/user-attachments/assets/f904932b-b891-4dc9-a68e-abb53c47a3c7](https://github.com/user-attachments/assets/f904932b-b891-4dc9-a68e-abb53c47a3c7)
 
-    <img alt="PixPin_2024-10-28_12-02-57" src="assets/PixPin_2024-10-28_12-02-57-20241028120259-9wmwoy9.png" />
+    <img alt="PixPin_2024-10-28_12-02-57" src="https://s2.loli.net/2025/08/28/nwjG7guvdVoeMlP.png" />
   - 英文
 
     - ​`weekdayType=1`：`"Sun","Mon","Tue","Wed","Thu","Fri","Sat"`​
@@ -423,7 +423,7 @@ Content: .action{$b.Content}
     - ​`weekdayType=4`：`"SUNDAY","MONDAY","TUESDAY","WEDNESDAY","THURSDAY","FRIDAY","SATURDAY"`  
       [https://github.com/user-attachments/assets/d307cff9-a037-4bed-84f9-4e9501155712](https://github.com/user-attachments/assets/d307cff9-a037-4bed-84f9-4e9501155712)
 
-    <img alt="PixPin_2024-10-28_12-03-16" src="assets/PixPin_2024-10-28_12-03-16-20241028120318-fsa1e8y.png" />
+    <img alt="PixPin_2024-10-28_12-03-16" src="https://s2.loli.net/2025/08/28/UTjZKph3DBlOXVq.png" />
 - ​`content`：设置文字图标的内容，默认为空，仅在type\=8时有效
 
   注意content输入下面特殊符号，需要用URL编码替代，否则导致解析参数失败或丢失
