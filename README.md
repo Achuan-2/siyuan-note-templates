@@ -75,7 +75,6 @@
 - ​`powf`：指数计算，返回浮点数
 - ​`log`：对数计算，返回整数
 - ​`logf`：对数计算，返回浮点数
-- ​`toPrettyJson`​
 
 ​`queryBlocks` 和 `querySpans` 、`querySQL`支持类似 SQL 预编译语句的变参列表，方便传入参数，下面是一个示例，向SQL语句传入了三个参数，使用`?`占位
 
@@ -494,8 +493,6 @@ Content: .action{$b.Content}
 - ​`bool`：布尔类型（`true` 或者 `false`）
 - ​`Time`：时间对象类型
 
-
-
 #### 字典
 
 示例：通过日期获取对应icon路径
@@ -510,12 +507,25 @@ Content: .action{$b.Content}
 {: icon="time/.action{$docIconUrl}"   type="doc"}
 ```
 
-#### 列表
+使用`toPrettyJson`可以把字典以json格式展示
 
 ```template
-.action{/*--注释：slice list num 相当于 list[num:]，这一步相当于是只计算子文档相对于当前文档的层次数 --*/}
-.action{$a:=slice $a $p_len}
+.action{$docIconDict | toPrettyJson}
 ```
+
+```json
+{
+  "Fri": "day_Today_5_Friday.png",
+  "Mon": "day_Today_1_Monday.png",
+  "Sat": "day_Today_6_Saturday.png",
+  "Sun": "day_Today_7_Sunday.png",
+  "Thu": "day_Today_4_Thursday.png",
+  "Tue": "day_Today_2_Tuesday.png",
+  "Wed": "day_Today_3_Wednesday.png"
+}
+```
+
+### 常用函数
 
 #### 常用数值计算函数
 
