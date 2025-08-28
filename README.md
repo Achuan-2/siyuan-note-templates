@@ -634,7 +634,7 @@ Content: .action{$b.Content}
   - ​`date <fmt str> <Time>`：`str`, 将输入的时间对象格式化为字符串
 
     - ​`fmt` 使用 `2006-01-02 15:04:05` 这个固定时间格式（[知乎讨论](https://ld246.com/forward?goto=https%3A%2F%2Fwww.zhihu.com%2Fquestion%2F366830553)）
-    - 教你如何记忆这个 🗑️ 垃圾到 😡 爆炸的 magin number
+    - 教你如何记忆这个格式
 
       - 首先年份固定是 2006
       - 后面的月日时分秒从 01 开始依次递增到 05
@@ -644,7 +644,7 @@ Content: .action{$b.Content}
 
     - 注：思源内置的 `parseTime` 函数使用体验比这个函数要好一点
   - ​`duratioin <second: int>`：`Duration`, 将传入的秒数（int）转换为 `Duration` 对象
-  - ​`date_modify`​
+  - ​`date_modify`：修改时间
 
     ```template
     .action{$tomorrow := (now | date_modify "24h") | date "2006-01-02 "}
@@ -660,8 +660,11 @@ Content: .action{$b.Content}
     ```template
     .action{$customDate :=parseTime "2025-08-27"}
     .action{$month := $customDate | ISOMonth}
-    2025-08-27的ISOMonth是`.action{ternary (nospace (cat "0" $month)) $month (lt $month 10)}`
+    2025-08-27的ISOMonth是`.action{now | ISOMonth |  printf "%02d"}月`
     ```
+  - ​`ISOWeek`：该函数用于返回第几周
+  - ​`ISOYear`：返回ISOWeek所在的年份
+  - ​`ISOMonth`： 返回指定日期所属的 ISO 8601 周的第一天所在的月份。
 - ​`Time`：Golang 的 time.Time 类型，这个类型里面有不少有用的属性可以访问
 
   - **完整函数参考**：[https://pkg.go.dev/time#Time](https://ld246.com/forward?goto=https%3A%2F%2Fpkg.go.dev%2Ftime%23Time)
@@ -745,6 +748,47 @@ Content: .action{$b.Content}
     >
 4. ​`date <fmt str> <Time>` 是固定搭配的用法，这里 `"2006/01"` 也是固定的用法
 5. 所以最后，这个模板会被渲染为 `yyyy/mm` 这样的格式，和前面的组合起来，就会形成 `/daily note/<年份>/<月份>` 这样的路径字符串
+
+##### 常用日期模板
+
+- 今日日期和星期
+
+  ```template
+  <!-- 返回今天日期和星期 英文 -->
+  .action{ now | date "2006.01.02  Mon "}
+
+  <!-- 返回今天日期和星期 中文 -->
+  .action{now | date "2006-01-02"} 星期.action{now | WeekdayCN}
+  ```
+- 过去几天
+
+  ```template
+  .action{/*返回今天过去几天,修改date_modify 后的小时数*/}
+  .action{(now | date_modify "-72h")| date "2006.01.02 Mon"}
+  ```
+- 返回这一周的日期范围
+
+  ```template
+  .action{now | ISOWeekDate 1| date "20060102 Mon"} ~ .action{now | ISOWeekDate 7| date "20060102 Mon"}
+  ```
+- 正数日
+
+  例如正数2022年已过几天，自定义正数日只需要改ini_date后的日期。
+
+  ```template
+  .action{$ini_date := "2022-01-01"}
+  .action{$countdown := (div (now.Sub (toDate "2006-01-02" $ini_date)).Hours 24)}
+  2022年已过 .action{$countdown} 天
+  ```
+- 倒数日
+
+  例如倒数2030年还有几天，自定义倒数日只需要改ini_date后的日期。
+
+  ```template
+  .action{$ini_date := "2030-01-01"}
+  .action{$countdown := (div ((toDate "2006-01-02" $ini_date).Sub now).Hours 24)}
+  距离2023年还有 .action{$countdown} 天
+  ```
 
 #### 常用字符串操作函数
 
