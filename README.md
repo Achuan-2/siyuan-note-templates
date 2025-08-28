@@ -34,7 +34,7 @@
 
 <img alt="PixPin_2025-08-28_16-30-40" src="https://assets.b3logfile.com/siyuan/1610205759005/assets/PixPin_2025-08-28_16-30-40-20250828163043-k3itbr1.png" />
 
-再次调用
+调用模板
 
 <img alt="PixPin_2025-08-28_16-28-40" src="https://assets.b3logfile.com/siyuan/1610205759005/assets/PixPin_2025-08-28_16-28-40-20250828162847-gwdz6vt.png" />
 
