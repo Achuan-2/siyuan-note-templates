@@ -133,7 +133,7 @@
   ```template
   .action{now | ISOYear}
   ```
-- ​`ISOMonth`： 返回指定日期所属周的星期一所在的月份，版本要求：思源笔记v3.3.1
+- ​`ISOMonth`： 返回指定日期所属周的星期四所在的月份，版本要求：思源笔记v3.3.1
 
   ```template
   .action{$customDate :=parseTime "2025-08-27"}
